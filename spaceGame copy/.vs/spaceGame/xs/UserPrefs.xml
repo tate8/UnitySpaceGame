@@ -1,0 +1,57 @@
+﻿<Properties StartupConfiguration="{6BAA6E89-ADD4-A4B7-B91D-F4EDDAE2E86F}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MoveEnemyProjectile.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Asteroid.cs" Line="10" Column="1" IsPinned="True" />
+      <File FileName="Assets/Scripts/Laser.cs" Line="39" Column="9" IsPinned="True" />
+      <File FileName="Assets/Scripts/Planet Generation/Planet.cs" Line="1" Column="1" IsPinned="True" />
+      <File FileName="Assets/Scripts/EnemyMovement.cs" Line="16" Column="1" IsPinned="True" />
+      <File FileName="Assets/Scripts/Explosion.cs" Line="21" Column="1" IsPinned="True" />
+      <File FileName="Assets/Scripts/Planet Generation/TerrainFace.cs" Line="1" Column="1" IsPinned="True" />
+      <File FileName="Assets/Scripts/MoveProjectile.cs" Line="30" Column="1" IsPinned="True" />
+      <File FileName="Assets/Scripts/SpawnProjectiles.cs" Line="22" Column="40" />
+      <File FileName="Assets/Scripts/EnemyAttack.cs" Line="11" Column="1" />
+      <File FileName="Assets/Scripts/playerMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/shipMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Thruster.cs" />
+      <File FileName="Assets/Scripts/PlayerInput.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AsteroidManager.cs" Line="13" Column="28" />
+      <File FileName="Assets/Editor/ParseVoxelStructure.cs" />
+      <File FileName="Assets/Scripts/Shield.cs" Line="15" Column="59" />
+      <File FileName="Assets/Scripts/EnemySpawner.cs" Line="21" Column="50" />
+      <File FileName="Assets/Scripts/EnemyRotateToPlayer.cs" Line="21" Column="51" />
+      <File FileName="Assets/Scripts/EnemySpawnProjectile.cs" Line="29" Column="1" />
+      <File FileName="Assets/Scripts/RotateToMouse.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EventManager.cs" Line="10" Column="33" />
+      <File FileName="Assets/Scripts/UI/GameUI.cs" Line="10" Column="5" />
+      <File FileName="Assets/Scripts/MoveEnemyProjectile.cs" Line="72" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="spaceGame" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Enemy" expanded="True" />
+                <Node name="Player" expanded="True" />
+                <Node name="UI" expanded="True" />
+                <Node name="MoveEnemyProjectile.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="26b6b128-6eaa-4141-b7a8-9ce1e56acb7e" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
