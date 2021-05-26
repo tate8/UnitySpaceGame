@@ -14,7 +14,7 @@ public class MoveEnemyProjectile : MonoBehaviour
     void Start()
     {
         myPrevPos = transform.position;
-        coroutine = WaitAndDestroy(1.0f);
+        coroutine = WaitAndDestroy(3.0f);
         StartCoroutine(coroutine);
 
 
@@ -51,9 +51,11 @@ public class MoveEnemyProjectile : MonoBehaviour
             if (temp != null)
             {
                 if (!hits[i].transform.gameObject.CompareTag("Enemy"))
+                {
                     temp.IveBeenHit(hits[i].point);
+                    Destroy(gameObject);
+                }
             }
-            Destroy(gameObject);
 
             // remove voxels around it
             //Collider[] hitColliders = Physics.OverlapSphere(hits[i].point, sphereRadius);

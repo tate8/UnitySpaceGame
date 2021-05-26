@@ -95,6 +95,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d337664c32804632a0635ba21439f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sphereRadius: 7.15
-  speed: 82.28
-  fireSpeed: 36.5
+  sphereRadius: 4.34
+  speed: 103.2
+  fireSpeed: 9.94

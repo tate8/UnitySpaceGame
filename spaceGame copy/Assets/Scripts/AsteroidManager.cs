@@ -5,7 +5,7 @@ using UnityEngine;
 public class AsteroidManager : MonoBehaviour
 {
     [SerializeField] Asteroid asteroid;
-    int numOfAsteroidsOnAxis = 10;
+    int numOfAsteroidsOnAxis = 5;
     int gridSpacing = 100;
 
     void Start()

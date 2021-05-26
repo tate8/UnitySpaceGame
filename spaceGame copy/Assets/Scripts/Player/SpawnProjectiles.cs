@@ -7,6 +7,7 @@ public class SpawnProjectiles : MonoBehaviour
     public GameObject firePoint;
     public List<GameObject> vfx = new List<GameObject>();
     public RotateToMouse rotatetoMouse;
+    [SerializeField] Transform ship;
 
     private GameObject effectToSpawn;
 
@@ -25,7 +26,7 @@ public class SpawnProjectiles : MonoBehaviour
             timeToFire = Time.time + 1 / effectToSpawn.GetComponent<MoveProjectile>().fireSpeed;
             SpawnVFX();
         }
-        firePoint.gameObject.transform.rotation = rotatetoMouse.GetRotation();
+        //firePoint.gameObject.transform.rotation = rotatetoMouse.GetRotation();
     }
 
     void SpawnVFX()
@@ -33,10 +34,10 @@ public class SpawnProjectiles : MonoBehaviour
         GameObject vfx;
         if (firePoint != null)
         {
-            vfx = Instantiate(effectToSpawn, firePoint.transform.position, Quaternion.identity);
+            vfx = Instantiate(effectToSpawn, firePoint.transform.position, ship.transform.rotation);
             if(rotatetoMouse != null)
             {
-                vfx.transform.localRotation = rotatetoMouse.GetRotation();
+                //vfx.transform.localRotation = rotatetoMouse.GetRotation();
 
             }
         }

@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{3E04F4EB-DCF0-0C34-DDFE-D3DE203842FA}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/MoveProjectile.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Player/SpawnProjectiles.cs" Line="29" Column="81" />
+      <File FileName="Assets/Scripts/ChangeCamera.cs" />
+      <File FileName="Assets/SMC Pack 1/Demo/DemoAssets/V_Text.cs" />
+      <File FileName="Assets/SMC Pack 1/Demo/DemoAssets/V_SMC_Handler.cs" />
+      <File FileName="Assets/SMC Pack 1/Demo/DemoAssets/V_SMC_Camera.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemy/EnemyMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemy/MoveEnemyProjectile.cs" Line="55" Column="52" />
+      <File FileName="Assets/Scripts/AsteroidManager.cs" Line="8" Column="33" />
+      <File FileName="Assets/Scripts/Identifier.cs" Line="35" Column="1" />
+      <File FileName="Assets/Scripts/Player/shipMovement.cs" Line="43" Column="1" />
+      <File FileName="Assets/Scripts/Player/MoveProjectile.cs" Line="57" Column="50" />
+      <File FileName="Assets/Scripts/Asteroid.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="spaceGame copy" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Enemy" expanded="True" />
+                <Node name="Player" expanded="True">
+                  <Node name="MoveProjectile.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="26b6b128-6eaa-4141-b7a8-9ce1e56acb7e" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

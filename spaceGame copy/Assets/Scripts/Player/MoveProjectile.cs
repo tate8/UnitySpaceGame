@@ -14,7 +14,7 @@ public class MoveProjectile : MonoBehaviour
     void Start()
     {
         myPrevPos = transform.position;
-        coroutine = WaitAndDestroy(1.0f);
+        coroutine = WaitAndDestroy(2.0f);
         StartCoroutine(coroutine);
 
 
@@ -48,13 +48,20 @@ public class MoveProjectile : MonoBehaviour
         {
             // do explosion
             Explosion temp = hits[i].transform.GetComponent<Explosion>();
-            if (temp != null);
+            if (temp != null)
             {
+                Debug.Log("hit: "+hits[i].transform.gameObject.tag);
                 if (!hits[i].transform.gameObject.CompareTag("Player"))
                 {
+                    if (hits[i].transform.gameObject.CompareTag("Enemy"))
+                    {
+                        foreach (Transform child in hits[i].transform)
+                            Destroy(child.gameObject);
+                        Destroy(hits[i].transform.gameObject);
+                    }
                     temp.IveBeenHit(hits[i].point);
                     Destroy(gameObject);
-                }                
+                }        
             }
             
             

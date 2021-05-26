@@ -40,7 +40,6 @@ public class shipMovement : MonoBehaviour
     void GenerateSlowSpeedParticles()
     {
         float axis = Input.GetAxis("Vertical");
-        Debug.Log(axis);
         if (axis > 0 && !slowSpeedParticles.isPlaying)
         {
             slowSpeedParticles.Play();
