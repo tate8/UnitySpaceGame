@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoveProjectile : MonoBehaviour
 {
-    [SerializeField] float sphereRadius = 2f;
+    //[SerializeField] float sphereRadius = 2f;
     Vector3 myPrevPos;
     private IEnumerator coroutine;
 
@@ -31,6 +31,7 @@ public class MoveProjectile : MonoBehaviour
 
     IEnumerator WaitAndDestroy(float waitTime)
     {
+        // destroy after waitTime
         yield return new WaitForSeconds(waitTime);
         Destroy(gameObject);
     }
@@ -42,6 +43,7 @@ public class MoveProjectile : MonoBehaviour
 
         transform.position += transform.forward * (speed * Time.deltaTime);
 
+        // make ray from new pos to old pos and check if it hits
         RaycastHit[] hits = Physics.RaycastAll(new Ray(myPrevPos, (transform.position - myPrevPos).normalized), (transform.position - myPrevPos).magnitude);
 
         for (int i = 0; i < hits.Length; i++)
@@ -50,7 +52,6 @@ public class MoveProjectile : MonoBehaviour
             Explosion temp = hits[i].transform.GetComponent<Explosion>();
             if (temp != null)
             {
-                Debug.Log("hit: "+hits[i].transform.gameObject.tag);
                 if (!hits[i].transform.gameObject.CompareTag("Player"))
                 {
                     if (hits[i].transform.gameObject.CompareTag("Enemy"))

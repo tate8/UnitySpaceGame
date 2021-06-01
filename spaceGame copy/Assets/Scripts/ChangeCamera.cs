@@ -10,6 +10,7 @@ public class ChangeCamera : MonoBehaviour
 
     private void Update()
     {
+        // press C to switch from 3rd to 1st person
         if (Input.GetKeyDown(KeyCode.C))
         {
             if (CamMode == 1)

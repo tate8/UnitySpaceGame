@@ -6,6 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(LineRenderer))]
 public class Laser : MonoBehaviour
 {
+    // NOT IN USE
+
     [SerializeField] float maxDistance = 300f;
     LineRenderer lr;
 

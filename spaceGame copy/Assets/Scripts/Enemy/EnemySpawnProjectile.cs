@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EnemySpawnProjectile : MonoBehaviour
 {
+    // same as SpawnProjectile, but handles enemy bullets
+    //TODO: make SpawnProjectile handle both player and enemy bullets
+
     [SerializeField] GameObject enemy;
     public GameObject firePoint;
     public List<GameObject> vfx = new List<GameObject>();

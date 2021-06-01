@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4191138670662343796}
   - component: {fileID: 1595987706149834611}
   - component: {fileID: -5988697802545390478}
+  - component: {fileID: -9093013810680732072}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -27,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894239275048334487}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.027225, y: 7.043957, z: 31.248728}
-  m_LocalScale: {x: 0.20613572, y: 0.20884177, z: 1.9710834}
+  m_LocalPosition: {x: 2.027225, y: 7.043957, z: 31.249}
+  m_LocalScale: {x: 0.20613572, y: 0.20884177, z: 3.3979506}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -95,6 +96,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b279fbb75b8d242f19a45b65492b7df3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sphereRadius: 20
-  speed: 220
+  speed: 750
   fireSpeed: 6
+--- !u!114 &-9093013810680732072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894239275048334487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa1756557f9bc4fb9ad0c3d69f50fdd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 1826759798817983899, guid: d5b62ebde0c454c649d8697554916fe3, type: 3}
+  rigidBody: {fileID: 0}
+  shield: {fileID: 0}
+  laserHitModifier: 10

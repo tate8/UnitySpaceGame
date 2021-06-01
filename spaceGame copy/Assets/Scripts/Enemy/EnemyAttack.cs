@@ -28,7 +28,7 @@ public class EnemyAttack : MonoBehaviour
         Vector3 directionToTarget = transform.position - target.transform.position;
         float angle = Vector3.Angle(transform.forward, directionToTarget);
 
-        // if in range
+        // if in range, true
         if (Mathf.Abs(angle) > 30 && Mathf.Abs(angle)<330)
         {
             return true;
@@ -40,6 +40,7 @@ public class EnemyAttack : MonoBehaviour
 
     bool HaveLineOfSight()
     {
+        // if the enemy can see the target: there might be asteroids or a planet in the way
         RaycastHit hit;
         Vector3 direction = target.transform.position - transform.position;
 
@@ -54,6 +55,7 @@ public class EnemyAttack : MonoBehaviour
 
     void FireLaser()
     {
+        // redirect
         projectile.FireProjectile();
     }
 

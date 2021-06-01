@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RotateToMouse : MonoBehaviour
 {
+    // NOT IN USE
     public Camera cam;
     public float maximumLength;
 

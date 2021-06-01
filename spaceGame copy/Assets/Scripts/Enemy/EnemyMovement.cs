@@ -23,11 +23,13 @@ public class EnemyMovement : MonoBehaviour
 
     void Move()
     {
+        // move toward target
         transform.position += transform.forward * movementSpeed * Time.deltaTime;
     }
 
     void Turn()
     {
+        // turn toward the target
         Vector3 pos = target.position - transform.position;
         Quaternion rotation = Quaternion.LookRotation(pos);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, rotationalDamp * Time.deltaTime);
@@ -48,6 +50,7 @@ public class EnemyMovement : MonoBehaviour
         Debug.DrawRay(up, transform.forward * detectionDistance, Color.cyan);
         Debug.DrawRay(down, transform.forward * detectionDistance, Color.cyan);
 
+        // draw four rays on the cylinder and if they hit something, move
         if (Physics.Raycast(left, transform.forward, out hit, detectionDistance))
             rayOffset += Vector3.right;
         else if (Physics.Raycast(right, transform.forward, out hit, detectionDistance))

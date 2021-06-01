@@ -23,6 +23,7 @@ public class Explosion : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        // get point of collision and make explosion there
         foreach(ContactPoint contact in collision.contacts)
         {
             IveBeenHit(contact.point);
@@ -31,6 +32,7 @@ public class Explosion : MonoBehaviour
 
     public void AddForce(Vector3 hitPosition, Transform hitSource)
     {
+        // add force when explosion happens
         IveBeenHit(hitPosition);
         Debug.LogWarning("Addforce: " + gameObject.name + "->" + hitSource.name);
         if (rigidBody == null)

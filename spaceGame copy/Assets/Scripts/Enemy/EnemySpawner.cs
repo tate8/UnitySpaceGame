@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    // class to spawn enemies
     [SerializeField] GameObject enemyPrefab;
     [SerializeField] float spawnTimer = 5f;
 
-    private void Start()
-    {
-    }
 
     void OnEnable()
     {

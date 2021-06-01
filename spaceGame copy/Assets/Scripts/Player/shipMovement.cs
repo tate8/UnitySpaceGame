@@ -39,6 +39,7 @@ public class shipMovement : MonoBehaviour
 
     void GenerateSlowSpeedParticles()
     {
+        // slow particles for player reference point
         float axis = Input.GetAxis("Vertical");
         if (axis > 0 && !slowSpeedParticles.isPlaying)
         {

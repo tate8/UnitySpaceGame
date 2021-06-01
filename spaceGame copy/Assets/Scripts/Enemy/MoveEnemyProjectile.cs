@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MoveEnemyProjectile : MonoBehaviour
 {
+    // same as MoveProjectile, but handles enemy bullets
+    //TODO: make MoveProjectile handle both player and enemy bullets
+
     [SerializeField] float sphereRadius = 2f;
     Vector3 myPrevPos;
     private IEnumerator coroutine;

@@ -4794,13 +4794,13 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
+  m_UseCustomVertexStreams: 1
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
-  m_VertexStreams: 00010304
+  m_VertexStreams: 000304
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
@@ -4838,6 +4838,56 @@ Transform:
   m_Father: {fileID: 3385870929796000610}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1172557720502833119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4181511316120673891}
+  - component: {fileID: 5394199366119046111}
+  m_Layer: 0
+  m_Name: MissileLauncher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4181511316120673891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172557720502833119}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.01, y: -1.49, z: 1.11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3385870929796000610}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5394199366119046111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172557720502833119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81cf9d4c0d6d240b283d748217d9097b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 1172557720502833119}
+  vfx:
+  - {fileID: 5315811832163777645, guid: 70e7d43c5e43e41588c999703d5ecb75, type: 3}
+  ship: {fileID: 3385870929796000610}
+  rayLength: 1000
+  sphereRadius: 2.5
+  switchUIColor: {fileID: 0}
 --- !u!1 &2040630673382437289
 GameObject:
   m_ObjectHideFlags: 0
@@ -4909,6 +4959,7 @@ Transform:
   - {fileID: 1948913632}
   - {fileID: 1576484146036488454}
   - {fileID: 4072671302921454108}
+  - {fileID: 4181511316120673891}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5014,7 +5065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thruster: []
   slowSpeedParticles: {fileID: 1948913634}
-  forwardSpeed: 60
+  forwardSpeed: 80
   strafeSpeed: 7.5
   hoverSpeed: 10
   lookRateSpeed: 90
@@ -5325,7 +5376,6 @@ MonoBehaviour:
   firePoint: {fileID: 7091918874647521898}
   vfx:
   - {fileID: 1894239275048334487, guid: dcdd129f5298d46a4ad849ffe6fa1d4a, type: 3}
-  rotatetoMouse: {fileID: 5311900017157364263}
   ship: {fileID: 3385870929796000610}
 --- !u!114 &5311900017157364263
 MonoBehaviour:
@@ -5513,8 +5563,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9061728613546006823}
-  m_LocalRotation: {x: 0.0118450085, y: -0.0008140051, z: 0.000009642576, w: 0.99992955}
-  m_LocalPosition: {x: -0.02999998, y: 4.42, z: -13.14}
+  m_LocalRotation: {x: 0.011845008, y: -0.00081450946, z: 0.000009648551, w: 0.99992955}
+  m_LocalPosition: {x: -0.029999971, y: 4.42, z: -13.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6699241177058095607}
@@ -5550,7 +5600,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7765363, y: 1}
+    m_SensorSize: {x: 1.7769911, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -5616,7 +5666,6 @@ MonoBehaviour:
   firePoint: {fileID: 9111097329328675193}
   vfx:
   - {fileID: 1894239275048334487, guid: dcdd129f5298d46a4ad849ffe6fa1d4a, type: 3}
-  rotatetoMouse: {fileID: 792950310}
   ship: {fileID: 3385870929796000610}
 --- !u!23 &792950311
 MeshRenderer:

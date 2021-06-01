@@ -30,6 +30,7 @@ public class Asteroid : MonoBehaviour
 
     private void ChangeScale()
     {
+        // random scale
         Vector3 scale = Vector3.one;
         scale.x = Random.Range(minScale, maxScale);
         scale.y = Random.Range(minScale, maxScale);
@@ -39,6 +40,7 @@ public class Asteroid : MonoBehaviour
 
     private void RandomRotation()
     {
+        // random rotation
         randomRotation.x = Random.Range(-rotationOffset, rotationOffset);
         randomRotation.y = Random.Range(-rotationOffset, rotationOffset);
         randomRotation.z = Random.Range(-rotationOffset, rotationOffset);

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
+    // FOR WALKING PLAYER
+
     Animator anim;
     CharacterController controller;
 
@@ -16,6 +18,7 @@ public class playerMovement : MonoBehaviour
 
     private void Start()
     {
+        // cache
         anim = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
     }
@@ -29,6 +32,7 @@ public class playerMovement : MonoBehaviour
     {
         if (controller.isGrounded)
         {
+            // if W presssed, move and play animation
             if (Input.GetKey(KeyCode.W))
             {
                 anim.SetBool("isRunning", true);

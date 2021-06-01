@@ -1,18 +1,34 @@
 ﻿<Properties StartupConfiguration="{3E04F4EB-DCF0-0C34-DDFE-D3DE203842FA}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/MoveProjectile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Asteroids/GenericObjectPool.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player/SpawnProjectiles.cs" Line="29" Column="81" />
-      <File FileName="Assets/Scripts/ChangeCamera.cs" />
+      <File FileName="Assets/Scripts/UI/LockOnUI.cs" Line="29" Column="77" IsPinned="True" />
+      <File FileName="Assets/Scripts/Player/Identifier.cs" Line="1" Column="1" IsPinned="True" />
+      <File FileName="Assets/Scripts/Player/SpawnProjectiles.cs" Line="36" Column="33" />
+      <File FileName="Assets/Scripts/ChangeCamera.cs" Line="13" Column="52" />
       <File FileName="Assets/SMC Pack 1/Demo/DemoAssets/V_Text.cs" />
       <File FileName="Assets/SMC Pack 1/Demo/DemoAssets/V_SMC_Handler.cs" />
-      <File FileName="Assets/SMC Pack 1/Demo/DemoAssets/V_SMC_Camera.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Enemy/EnemyMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Enemy/MoveEnemyProjectile.cs" Line="55" Column="52" />
-      <File FileName="Assets/Scripts/AsteroidManager.cs" Line="8" Column="33" />
-      <File FileName="Assets/Scripts/Identifier.cs" Line="35" Column="1" />
-      <File FileName="Assets/Scripts/Player/shipMovement.cs" Line="43" Column="1" />
-      <File FileName="Assets/Scripts/Player/MoveProjectile.cs" Line="57" Column="50" />
-      <File FileName="Assets/Scripts/Asteroid.cs" Line="1" Column="1" />
+      <File FileName="Assets/SMC Pack 1/Demo/DemoAssets/V_SMC_Camera.cs" />
+      <File FileName="Assets/Scripts/Enemy/EnemyMovement.cs" Line="24" Column="1" />
+      <File FileName="Assets/Scripts/Enemy/MoveEnemyProjectile.cs" Line="7" Column="30" />
+      <File FileName="Assets/Scripts/AsteroidManager.cs" Line="28" Column="49" />
+      <File FileName="Assets/Scripts/Player/shipMovement.cs" Line="42" Column="38" />
+      <File FileName="Assets/Scripts/Player/MoveProjectile.cs" Line="46" Column="65" />
+      <File FileName="Assets/Scripts/Asteroid.cs" Line="43" Column="27" />
+      <File FileName="Assets/Scripts/Player/RotateToMouse.cs" Line="7" Column="18" />
+      <File FileName="Assets/Scripts/Player/playerMovement.cs" Line="35" Column="54" />
+      <File FileName="Assets/Scripts/Player/Shield.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/LockOn.cs" Line="8" Column="18" />
+      <File FileName="Assets/Scripts/Enemy/EnemyRotateToPlayer.cs" Line="30" Column="28" />
+      <File FileName="Assets/Scripts/Enemy/EnemySpawner.cs" Line="7" Column="30" />
+      <File FileName="Assets/Scripts/Enemy/EnemySpawnProjectile.cs" Line="8" Column="33" />
+      <File FileName="Assets/Scripts/Player/Thruster.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EventManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Explosion.cs" Line="28" Column="6" />
+      <File FileName="Assets/Scripts/Laser.cs" Line="9" Column="18" />
+      <File FileName="Assets/Scripts/Player/MoveMissile.cs" Line="51" Column="13" />
+      <File FileName="Assets/Scripts/Asteroids/BeltSpawnder.cs" Line="52" Column="52" />
+      <File FileName="Assets/Scripts/Asteroids/BeltObject.cs" Line="33" Column="77" />
+      <File FileName="Assets/Scripts/Asteroids/GenericObjectPool.cs" Line="7" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,9 +36,8 @@
           <Node name="spaceGame copy" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Enemy" expanded="True" />
-                <Node name="Player" expanded="True">
-                  <Node name="MoveProjectile.cs" selected="True" />
+                <Node name="Asteroids" expanded="True">
+                  <Node name="GenericObjectPool.cs" selected="True" />
                 </Node>
               </Node>
             </Node>

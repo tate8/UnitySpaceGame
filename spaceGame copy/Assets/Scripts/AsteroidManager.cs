@@ -6,7 +6,7 @@ public class AsteroidManager : MonoBehaviour
 {
     [SerializeField] Asteroid asteroid;
     int numOfAsteroidsOnAxis = 5;
-    int gridSpacing = 100;
+    int gridSpacing = 150;
 
     void Start()
     {
@@ -25,6 +25,7 @@ public class AsteroidManager : MonoBehaviour
 
     void PlaceAsteroids()
     {
+        // loop through grid and place asteroids
         for (int x=0; x<numOfAsteroidsOnAxis; x++)
         {
             for(int y = 0; y < numOfAsteroidsOnAxis; y++)
