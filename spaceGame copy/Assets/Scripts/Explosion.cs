@@ -5,16 +5,20 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class Explosion : MonoBehaviour
 {
-    [SerializeField] GameObject explosion;
-    [SerializeField] Rigidbody rigidBody;
+    public GameObject explosion;
+    public Rigidbody rigidBody;
     [SerializeField] Shield shield;
     [SerializeField] float laserHitModifier = 10f;
+    private AudioSource projectileHit;
 
 
     // TODO make asteroid split into smaller pieces on hit
     public void IveBeenHit(Vector3 pos)
     {
         GameObject go = Instantiate(explosion, pos, Quaternion.identity, transform);
+        projectileHit = go.GetComponent<AudioSource>();
+
+        projectileHit.Play();
         Destroy(go, 6f);
 
         if (shield != null)
@@ -23,10 +27,17 @@ public class Explosion : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        // get point of collision and make explosion there
-        foreach(ContactPoint contact in collision.contacts)
+        // only do explosion if its not two asteroids colliding: was making game lag
+        if (!rigidBody.transform.gameObject.CompareTag("Asteroid") && !collision.gameObject.CompareTag("Asteroid"))
         {
-            IveBeenHit(contact.point);
+            if (collision.gameObject.CompareTag("Player"))
+                Debug.Log("hit player");
+                return;
+            // get point of collision and make explosion there
+            foreach (ContactPoint contact in collision.contacts)
+            {
+                IveBeenHit(contact.point);
+            }
         }
     }
 
@@ -38,6 +49,6 @@ public class Explosion : MonoBehaviour
         if (rigidBody == null)
             return;
         Vector3 direction = (hitSource.position - hitPosition).normalized;
-        rigidBody.AddForceAtPosition(direction * laserHitModifier, hitPosition, ForceMode.Impulse);
+        rigidBody.AddForceAtPosition(-direction * laserHitModifier, hitPosition, ForceMode.Impulse);
     }
 }

@@ -1,45 +1,45 @@
 ﻿<Properties StartupConfiguration="{3E04F4EB-DCF0-0C34-DDFE-D3DE203842FA}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Asteroids/GenericObjectPool.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerController.cs">
     <Files>
-      <File FileName="Assets/Scripts/UI/LockOnUI.cs" Line="29" Column="77" IsPinned="True" />
-      <File FileName="Assets/Scripts/Player/Identifier.cs" Line="1" Column="1" IsPinned="True" />
-      <File FileName="Assets/Scripts/Player/SpawnProjectiles.cs" Line="36" Column="33" />
-      <File FileName="Assets/Scripts/ChangeCamera.cs" Line="13" Column="52" />
-      <File FileName="Assets/SMC Pack 1/Demo/DemoAssets/V_Text.cs" />
-      <File FileName="Assets/SMC Pack 1/Demo/DemoAssets/V_SMC_Handler.cs" />
-      <File FileName="Assets/SMC Pack 1/Demo/DemoAssets/V_SMC_Camera.cs" />
-      <File FileName="Assets/Scripts/Enemy/EnemyMovement.cs" Line="24" Column="1" />
-      <File FileName="Assets/Scripts/Enemy/MoveEnemyProjectile.cs" Line="7" Column="30" />
-      <File FileName="Assets/Scripts/AsteroidManager.cs" Line="28" Column="49" />
-      <File FileName="Assets/Scripts/Player/shipMovement.cs" Line="42" Column="38" />
-      <File FileName="Assets/Scripts/Player/MoveProjectile.cs" Line="46" Column="65" />
-      <File FileName="Assets/Scripts/Asteroid.cs" Line="43" Column="27" />
-      <File FileName="Assets/Scripts/Player/RotateToMouse.cs" Line="7" Column="18" />
-      <File FileName="Assets/Scripts/Player/playerMovement.cs" Line="35" Column="54" />
-      <File FileName="Assets/Scripts/Player/Shield.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/LockOn.cs" Line="8" Column="18" />
-      <File FileName="Assets/Scripts/Enemy/EnemyRotateToPlayer.cs" Line="30" Column="28" />
-      <File FileName="Assets/Scripts/Enemy/EnemySpawner.cs" Line="7" Column="30" />
-      <File FileName="Assets/Scripts/Enemy/EnemySpawnProjectile.cs" Line="8" Column="33" />
-      <File FileName="Assets/Scripts/Player/Thruster.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/EventManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Explosion.cs" Line="28" Column="6" />
-      <File FileName="Assets/Scripts/Laser.cs" Line="9" Column="18" />
-      <File FileName="Assets/Scripts/Player/MoveMissile.cs" Line="51" Column="13" />
-      <File FileName="Assets/Scripts/Asteroids/BeltSpawnder.cs" Line="52" Column="52" />
-      <File FileName="Assets/Scripts/Asteroids/BeltObject.cs" Line="33" Column="77" />
-      <File FileName="Assets/Scripts/Asteroids/GenericObjectPool.cs" Line="7" Column="1" />
+      <File FileName="Assets/Scripts/Player/PlayerController.cs" Line="15" Column="37" />
+      <File FileName="Assets/ModularFirstPersonController/FirstPersonController/FirstPersonController.cs" Line="435" Column="9" />
+      <File FileName="../../Solar-System-Clone/Assets/Scripts/Game/Interactions/Interactable.cs" />
+      <File FileName="../../Solar-System-Clone/Assets/Scripts/Game/Interactions/HatchButton.cs" />
+      <File FileName="Assets/Scripts/Interactions/Interactable.cs" />
+      <File FileName="Assets/Scripts/UI/GameUI.cs" />
+      <File FileName="Assets/Scripts/Player/shipMovement.cs" Line="104" Column="1" />
+      <File FileName="Assets/Scripts/Player/playerMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Asteroids/BeltObject.cs" Line="39" Column="31" />
+      <File FileName="Assets/Scripts/Explosion.cs" Line="52" Column="101" />
+      <File FileName="Assets/Scripts/Celestial/Universe.cs" />
+      <File FileName="Assets/Scripts/Celestial/NBodySimulation.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/Celestial/CelestialBody.cs" Line="61" Column="12" />
+      <File FileName="Assets/Scripts/Celestial/GravityObject.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Celestial/OrbitDebugDisplay.cs" Line="90" Column="1" />
+      <File FileName="Assets/Scripts/Asteroids/BeltSpawnder.cs" Line="64" Column="51" />
+      <File FileName="Assets/Scripts/AsteroidManager.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="spaceGame copy" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Asteroids" expanded="True">
-                  <Node name="GenericObjectPool.cs" selected="True" />
-                </Node>
+              <Node name="ModularFirstPersonController" expanded="True">
+                <Node name="FirstPersonController" expanded="True" />
               </Node>
+              <Node name="Scripts" expanded="True">
+                <Node name="Asteroids" expanded="True" />
+                <Node name="Celestial" expanded="True" />
+                <Node name="Interactions" expanded="True" />
+                <Node name="Player" expanded="True">
+                  <Node name="PlayerController.cs" selected="True" />
+                </Node>
+                <Node name="UI" expanded="True" />
+              </Node>
+              <Node name="SineVFX" expanded="True">
+                <Node name="Volumetric3DLasers" expanded="True" />
+              </Node>
+              <Node name="Space Ambient Album - 101218" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -53,7 +53,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="26b6b128-6eaa-4141-b7a8-9ce1e56acb7e" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b2d957c6-0a24-4bb8-b032-8636943c68f5" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

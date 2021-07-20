@@ -66,16 +66,18 @@ public class SpawnMissile : MonoBehaviour
             }
 
             switchUIColor.SetActive(true);
-            lockOn = true;
             switchUIColor.TurnRed();
+
+            lockOn = true;
             return target;
         }
         else
         {
             switchUIColor.SetActive(false);
+            switchUIColor.TurnWhite();
+
             //if (target.CompareTag("Enemy"))
             //    target.GetComponent<Canvas>().enabled = false;
-            switchUIColor.TurnWhite();
             return null;
         }
     }

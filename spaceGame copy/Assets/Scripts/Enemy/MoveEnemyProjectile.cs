@@ -17,7 +17,7 @@ public class MoveEnemyProjectile : MonoBehaviour
     void Start()
     {
         myPrevPos = transform.position;
-        coroutine = WaitAndDestroy(3.0f);
+        coroutine = WaitAndDestroy(10.0f);
         StartCoroutine(coroutine);
 
 

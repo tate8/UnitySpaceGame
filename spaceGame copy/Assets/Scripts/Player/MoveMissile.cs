@@ -47,13 +47,16 @@ public class MoveMissile : MonoBehaviour
 
         for (int i = 0; i < hits.Length; i++)
         {
+            Debug.DrawLine(transform.position, hits[i].transform.position, Color.green);
+
             // do explosion
-            Explosion temp = hits[i].transform.GetComponent<Explosion>();
-            if (temp != null)
-            {
+            //Explosion temp = hits[i].transform.GetComponent<Explosion>();
+            //if (temp != null)
+            //{
                 // if it's not player
                 if (!hits[i].transform.gameObject.CompareTag("Player"))
                 {
+                    // if it's an enemy
                     if (hits[i].transform.gameObject.CompareTag("Enemy"))
                     {
                         // destroy enemy if hit
@@ -61,9 +64,9 @@ public class MoveMissile : MonoBehaviour
                             Destroy(child.gameObject);
                         Destroy(hits[i].transform.gameObject);
                     }
-                    temp.IveBeenHit(hits[i].point);
+                    //temp.IveBeenHit(hits[i].point);
                     Destroy(gameObject);
-                }
+                //}
             }
         }
     }

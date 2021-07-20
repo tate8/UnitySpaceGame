@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class MoveProjectile : MonoBehaviour
 {
-    //[SerializeField] float sphereRadius = 2f;
     Vector3 myPrevPos;
     private IEnumerator coroutine;
-
+    //Rigidbody rb;
     public float speed;
     public float fireSpeed;
 
     void Start()
     {
-        myPrevPos = transform.position;
+        //myPrevPos = transform.position;
         coroutine = WaitAndDestroy(2.0f);
         StartCoroutine(coroutine);
+        //rb = GetComponent<Rigidbody>();
 
 
     }
@@ -31,8 +31,7 @@ public class MoveProjectile : MonoBehaviour
 
     IEnumerator WaitAndDestroy(float waitTime)
     {
-        // destroy after waitTime
-        yield return new WaitForSeconds(waitTime);
+        yield return new WaitForSeconds(waitTime); // destroy after waitTime
         Destroy(gameObject);
     }
 
@@ -40,6 +39,7 @@ public class MoveProjectile : MonoBehaviour
     {
 
         myPrevPos = transform.position;
+        //myPrevPos = rb.position;
 
         transform.position += transform.forward * (speed * Time.deltaTime);
 
@@ -48,7 +48,6 @@ public class MoveProjectile : MonoBehaviour
 
         for (int i = 0; i < hits.Length; i++)
         {
-            // do explosion
             Explosion temp = hits[i].transform.GetComponent<Explosion>();
             if (temp != null)
             {
@@ -62,23 +61,27 @@ public class MoveProjectile : MonoBehaviour
                     }
                     temp.IveBeenHit(hits[i].point);
                     Destroy(gameObject);
-                }        
+                }
             }
-            
-            
-            // remove voxels around it
-            //Collider[] hitColliders = Physics.OverlapSphere(hits[i].point, sphereRadius);
-            //foreach (var hitCollider in hitColliders)
-            //{
-            //    if (!hitCollider.CompareTag("Player"))
-            //    {
-            //        //Destroy(hitCollider.gameObject);
-            //        hitCollider.GetComponent<Rigidbody>().AddExplosionForce(100, hitCollider.transform.position, 10, 3f);
-            //    }
-                
-            //}
-            
-            //StartCoroutine(coroutine);
         }
     }
+
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    Explosion temp = collision.transform.GetComponent<Explosion>();
+    //    if (temp != null)
+    //    {
+    //        if (!collision.transform.gameObject.CompareTag("Player"))
+    //        {
+    //            if (collision.transform.gameObject.CompareTag("Enemy"))
+    //            {
+    //                foreach (Transform child in collision.transform)
+    //                    Destroy(child.gameObject);
+    //                Destroy(collision.transform.gameObject);
+    //            }
+    //            temp.IveBeenHit(collision.transform.position);
+    //            Destroy(gameObject);
+    //        }
+    //    }
+    //}
 }

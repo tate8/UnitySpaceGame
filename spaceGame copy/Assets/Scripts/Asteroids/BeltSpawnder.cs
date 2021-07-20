@@ -6,6 +6,7 @@ public class BeltSpawnder : MonoBehaviour
 {
     [Header("Spawner Settings")]
     public GenericObjectPool pool;
+    public GameObject[] prefabs;
     public int asteroidDensity;
     public int seed;
     public float innerRadius;
@@ -18,8 +19,10 @@ public class BeltSpawnder : MonoBehaviour
     public float maxOrbitSpeed;
     public float minRotationSpeed;
     public float maxRotationSpeed;
+    public float minScale;
+    public float maxScale;
 
-    private List<GameObject> asteroids = new List<GameObject>();
+
     private Vector3 localPosition;
     private Vector3 worldOffset;
     private Vector3 worldPosition;
@@ -54,10 +57,19 @@ public class BeltSpawnder : MonoBehaviour
             worldOffset = transform.rotation * localPosition;
             worldPosition = transform.position + worldOffset;
 
-            GameObject _asteroid = pool.Instantiate(worldPosition, Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)));
+            //GameObject _asteroid = pool.Instantiate(worldPosition, Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)));
+            GameObject randomPrefab = prefabs[Random.Range(0, prefabs.Length)];
+            GameObject _asteroid = Instantiate(randomPrefab, worldPosition, Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)));
             _asteroid.AddComponent<BeltObject>().SetupBeltObject(Random.Range(minOrbitSpeed, maxOrbitSpeed), Random.Range(minRotationSpeed, maxRotationSpeed), gameObject, rotatingClockwise);
             _asteroid.transform.SetParent(transform);
+            Vector3 scale = Vector3.one;
+
+            // RANDOM SCALE
+            scale.x = Random.Range(minScale, maxScale);
+            scale.y = scale.x;
+            scale.z = scale.x;
+            _asteroid.transform.localScale = scale;
         }
     }
+    }
 
-}
